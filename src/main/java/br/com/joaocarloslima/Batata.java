@@ -1,14 +1,14 @@
 package br.com.joaocarloslima;
 
-public class Morango {
+public class Batata {
     private int tamanho;
     private  int tempoDeVida;
     private int tempoDeCrescimento;
 
-    public Morango(int tamanho, int tempoDeVida, int tempoDeCrescimento) {
+    public Batata(int tamanho, int tempoDeVida, int tempoDeCrescimento) {
         this.tamanho = 1;
         this.tempoDeVida = 0;
-        this.tempoDeCrescimento = 3;
+        this.tempoDeCrescimento = 6;
     }
 
     public void crescer(){
@@ -25,7 +25,7 @@ public class Morango {
     }
 
     public String getImagem(){
-        return "images/morango" + tamanho + ".png";
+        return "images/batata" + tamanho + ".png";
     }
 
 }
