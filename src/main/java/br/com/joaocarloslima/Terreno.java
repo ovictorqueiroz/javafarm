@@ -17,9 +17,7 @@ public class Terreno {
     public void plantar(Morango morango){this.morango = morango;};
 
     public boolean estaOcupado(){
-        if(morango != null){return  true;}
-        else if(batata != null){return true;}
-        else if(cenoura != null){return  true;}
+        if((morango != null) || (batata != null) || (cenoura != null)){return  true;}
         else return false;
     }
 
