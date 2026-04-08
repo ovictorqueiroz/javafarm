@@ -12,9 +12,16 @@ public class Terreno {
         this.y = y;
     }
 
-    public void plantar(Batata batata);
-    public void plantar(Cenoura cenoura);
-    public void plantar(Morango morango);
+    public void plantar(Batata batata){ this.batata = batata; };
+    public void plantar(Cenoura cenoura){this.cenoura = cenoura;};
+    public void plantar(Morango morango){this.morango = morango;};
+
+    public boolean estaOcupado(){
+        if(morango != null){return  true;}
+        else if(batata != null){return true;}
+        else if(cenoura != null){return  true;}
+        else return false;
+    }
 
 
 }
