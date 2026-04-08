@@ -1,30 +1,27 @@
 package br.com.joaocarloslima;
 
 public class Batata {
-    private int tamanho;
-    private  int tempoDeVida;
-    private int tempoDeCrescimento;
+    private int tamanho = 1;
+    private int tempoDeVida = 0;
+    private int tempoDeCrescimento = 6;
 
-    public Batata(int tamanho, int tempoDeVida, int tempoDeCrescimento) {
-        this.tamanho = 1;
-        this.tempoDeVida = 0;
-        this.tempoDeCrescimento = 6;
-    }
 
-    public void crescer(){
+    public void crescer() {
         tempoDeVida++;
 
-        if(tempoDeCrescimento % tempoDeVida == 0){
+        if (tempoDeCrescimento % tempoDeVida == 0) {
             tamanho++;
         }
     }
 
-    public boolean podeColher(){
-        if (tamanho == 4){return true;}
+    public boolean podeColher() {
+        if (tamanho == 4) {
+            return true;
+        }
         return false;
     }
 
-    public String getImagem(){
+    public String getImagem() {
         return "images/batata" + tamanho + ".png";
     }
 
